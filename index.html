@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+<head>
+    <title>FC Barcelona Web Shop</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Službeni fan shop FC Barcelone">
+    <meta name="keywords" content="Barcelona, dres, merch, Camp Nou, La Liga">
+    <meta name="author" content="Ivan Jambrešić">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+        }
+
+        
+        body {
+            background-color: #000;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.7; 
+        }
+
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            background: linear-gradient(to right, #004d98, #a50040);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            background: linear-gradient(to right, #004d98, #a50040);
+            padding: 20px 0;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        @media only screen and (min-width: 700px) {
+            header {
+                height: 380px;
+            }
+        }
+
+        @media only screen and (min-width: 990px) {
+            header {
+                height: 100vh;
+            }
+            header h1 {
+                font-size: 48px;
+            }
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(255,255,255,0.95);
+            min-height: 100vh;
+            margin-top: 0;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #a50040; 
+            text-align: left;
+            padding: 10px 0;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        @media (min-width: 480px) {
+            nav ul {
+                display: flex;
+            }
+            nav li {
+                flex: 1;
+            }
+        }
+
+        nav a {
+            color: white;
+            background: #004d98; 
+            font-weight: bold;
+            display: block;
+            padding: 12px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #a50040; 
+        }
+
+        @media only screen and (min-width: 768px) {
+            nav a {
+                font-size: 22px;
+            }
+        }
+
+        footer {
+            background-color: #004d98;
+            padding: 15px 0;
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .contact_flex {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact_map {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        form {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background: #a50040;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background: #004d98;
+        }
+
+        figure img {
+            max-width: 150px;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="camp_nou.mp4" type="video/mp4"> 
+        Vaš preglednik ne podržava video.
+    </video>
+
+    
+    <div class="hero-text">
+        FC BARCELONA WEB SHOP
+    </div>
+
+    <header>
+        <h1>FC BARCELONA WEB SHOP</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dresovi.html">Dresovi</a></li>
+            <li><a href="oprema_dodaci.html">Sportska oprema</a></li>
+            <li><a href="memorabilia.html">Memorabilia</a></li>
+            <li><a href="fan_oprema.html">Fan artikli</a></li>
+            <li><a href="#Contact">Kontakt</a></li>
+            <li><a href="#About">O klubu</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Kontakt</h2>
+        </section>
+
+        <div class="sekcija sekcija_contact" id="Contact">
+            <div class="contact_flex">
+                <iframe class="contact_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.855404546617!2d2.1223689!3d41.3808977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2e9b3c9e8d5%3A0x8d7b4e3d1a7c4f1a!2sCamp%20Nou!5e0!3m2!1sen!2shr!4v1700000000000!5m2!1sen!2shr"></iframe>
+
+                <form action="" id="contact_form" class="forma" name="contact_form" method="post">
+                    <label for="fname">Ime</label><br>
+                    <input type="text" id="fname" placeholder="Vaše ime" required><br><br>
+
+                    <label for="lname">Prezime</label><br>
+                    <input type="text" id="lname" placeholder="Vaše prezime" required><br><br>
+
+                    <label for="email">E-mail adresa</label><br>
+                    <input type="email" id="email" placeholder="primjer@gmail.com" required><br><br>
+
+                    <label for="country">Država</label><br>
+                    <select style="color: black;" name="country" id="country" required>
+                        <option value="">Odaberite državu</option>
+                        <option value="Croatia">Hrvatska</option>
+                        <option value="Spain">Španjolska</option>
+                    </select><br><br>
+
+                    <label for="subject">Poruka</label><br>
+                    <textarea name="subject" id="subject" placeholder="Vaša poruka..." rows="5" style="border-radius: 5px;"></textarea><br><br>
+                    <input type="submit" value="Pošalji upit">
+                </form>
+            </div>
+        </div>
+
+        <div class="sekcija sekcija_about" id="About">
+            <h2>O klubu</h2>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/500px-FC_Barcelona_%28crest%29.svg.png" alt="FC Barcelona logo">
+            </figure>
+            <p>FC Barcelona, osnovan 1899. godine, jedan je od najuspješnijih i najpoznatijih nogometnih klubova na svijetu. Sjedište kluba je u Barceloni, Španjolska, a domaći stadion je ikonični Camp Nou – najveći stadion u Europi.</p><br>
+            <p>Klub je poznat po svojoj filozofiji "Més que un club" (Više od kluba), te igrajućem stilu "tiki-taka". Barcelona je osvojila brojne naslove, uključujući višestruke La Lige, Kupove kralja i UEFA Lige prvaka.</p><br>
+            <p>Naš web shop nudi službenu opremu, dresove, kolekcionarske artikle i ekskluzivne poklone za sve ljubitelje Barcelone diljem svijeta.</p><br>
+            <p>Službena stranica: <a href="https://www.fcbarcelona.com" target="_blank">FC Barcelona</a></p>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy; 2026 Ivan Jambrešić. | FC Barcelona Fan Shop
+        <a href="https://github.com/ijambresic9-arch" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 20px; width: auto; vertical-align: middle;" alt="GitHub">
+        </a>
+    </footer>
+</body>
+</html>
